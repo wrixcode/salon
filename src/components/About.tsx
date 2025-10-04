@@ -37,7 +37,7 @@ const features = [
           className="text-center mb-16"
         >
           <h2 className="text-4xl md:text-5xl font-bold mb-6 text-foreground">
-            Our Story
+            About Us
           </h2>
           <p className="text-lg md:text-xl text-muted-foreground max-w-3xl mx-auto leading-relaxed">
         At Glowory Studio, we believe grooming is more than just a haircut — it’s a lifestyle. Our expert stylists specialize in modern and classic men’s grooming, offering premium services that help you look sharp and feel confident. Step into a relaxing space where style meets precision. </p>

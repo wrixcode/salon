@@ -54,7 +54,7 @@ const Contact = () => {
           className="text-center mb-16"
         >
           <h2 className="text-4xl md:text-5xl font-bold mb-6 text-foreground">
-            Get in Touch
+            Contact Us
           </h2>
           <p className="text-lg text-muted-foreground max-w-2xl mx-auto">
             Ready to experience the Glowory Studio difference? Book your appointment today
