@@ -7,6 +7,7 @@ import Testimonials from "@/components/Testimonials";
 import Contact from "@/components/Contact";
 import Footer from "@/components/Footer";
 import Webapp from "@/components/Webapp";
+import BackToTop from "@/components/Backtotop";
 
 const Index = () => {
   return (
@@ -19,6 +20,7 @@ const Index = () => {
       <Testimonials />
       <Contact />
  <Webapp/>
+ <BackToTop/>
       <Footer />
       
     </div>

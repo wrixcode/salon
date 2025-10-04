@@ -39,7 +39,7 @@ const Footer = () => {
            +91 98765 43210
             </p>
              <p className="text-background/80 mb-4">
-          gloworystudio@gmail.com
+          glowory@gmail.com
             </p>
            
           </div>
