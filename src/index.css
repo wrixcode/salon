@@ -1,0 +1,121 @@
+/* 1️⃣ Tailwind core directives must come first */
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/* 2️⃣ Now you can define your custom base styles */
+@layer base {
+  :root {
+    /* Gents Beauty Salon Palette */
+    --background: 210 20% 95%;       
+    --foreground: 220 15% 20%;
+
+    --card: 0 0% 100%;
+    --card-foreground: 220 15% 20%;
+
+    --popover: 0 0% 100%;
+    --popover-foreground: 220 15% 20%;
+
+    --primary: 200 60% 35%;
+    --primary-foreground: 0 0% 100%;
+
+    --secondary: 210 20% 85%;
+    --secondary-foreground: 220 15% 20%;
+
+    --muted: 210 10% 75%;
+    --muted-foreground: 220 10% 40%;
+
+    --accent: 30 60% 50%;
+    --accent-foreground: 0 0% 100%;
+
+    --destructive: 0 70% 50%;
+    --destructive-foreground: 0 0% 100%;
+
+    --border: 210 10% 80%;
+    --input: 210 10% 80%;
+    --ring: 200 60% 35%;
+
+    --shadow-soft: 0 10px 40px -15px hsl(200 60% 35% / 0.2);
+    --shadow-glow: 0 0 30px hsl(200 60% 45% / 0.3);
+    --radius: 1.5rem;
+
+    --gradient-primary: linear-gradient(135deg, hsl(200 60% 35%), hsl(200 60% 45%));
+    --gradient-accent: linear-gradient(135deg, hsl(30 60% 50%), hsl(30 70% 60%));
+    --gradient-subtle: linear-gradient(180deg, hsl(210 20% 95%), hsl(220 20% 85%));
+
+    /* Sidebar */
+    --sidebar-background: 210 15% 15%;
+    --sidebar-foreground: 210 10% 85%;
+    --sidebar-primary: 200 60% 35%;
+    --sidebar-primary-foreground: 0 0% 100%;
+    --sidebar-accent: 30 60% 50%;
+    --sidebar-accent-foreground: 0 0% 100%;
+    --sidebar-border: 210 10% 40%;
+    --sidebar-ring: 200 60% 35%;
+  }
+
+  /* Dark Mode */
+  .dark {
+    --background: 220 15% 10%; 
+    --foreground: 210 20% 95%;
+
+    --card: 220 15% 15%;
+    --card-foreground: 210 20% 95%;
+
+    --primary: 200 60% 35%;
+    --primary-foreground: 0 0% 100%;
+
+    --secondary: 220 15% 20%;
+    --secondary-foreground: 210 20% 95%;
+
+    --accent: 30 60% 50%;
+    --accent-foreground: 0 0% 100%;
+
+    --muted: 220 15% 20%;
+    --muted-foreground: 210 20% 75%;
+
+    --border: 210 10% 25%;
+    --input: 210 10% 25%;
+    --ring: 200 60% 35%;
+  }
+
+  /* Base element styling */
+  * {
+    @apply border-border;
+  }
+
+  body {
+    @apply bg-background text-foreground font-sans antialiased;
+  }
+
+  h1, h2, h3, h4, h5, h6 {
+    @apply font-serif;
+  }
+}
+
+/* 3️⃣ Custom utilities */
+@layer utilities {
+  .hero-gradient {
+    background: var(--gradient-primary);
+  }
+
+  .accent-gradient {
+    background: var(--gradient-accent);
+  }
+
+  .subtle-gradient {
+    background: var(--gradient-subtle);
+  }
+
+  .shadow-soft {
+    box-shadow: var(--shadow-soft);
+  }
+
+  .shadow-glow {
+    box-shadow: var(--shadow-glow);
+  }
+
+  .transition-smooth {
+    transition: all 0.4s cubic-bezier(0.4, 0, 0.2, 1);
+  }
+}
